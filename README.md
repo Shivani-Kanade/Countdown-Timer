@@ -30,5 +30,5 @@ Countdown-Timer/
 │
 ├── index.html
 ├── style.css
-└── app.js
+└── script.js
 ```
