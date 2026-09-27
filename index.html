@@ -4,30 +4,52 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
+    <title>Countdown Timer</title>
 </head>
+
 <body>
-      <div class="msg-container hide">
-        <p id="msg">Winner</p>
-        <button id="new-btn">New Game</button>
-      </div>
-      <main>
-    <h1>TIC TAC TOE</h1>
-     <div class="container">
-        <div class="game">
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
-        <button class="box"></button>
+
+    <div class="main">
+        <div class="overlay">
+
+            <div class="title">We are coming soon</div>
+
+            <!-- User selects date and time -->
+            <input type="datetime-local" id="dateInput">
+            <button onclick="startClock()">Start Countdown</button>
+
+            <div class="title" id="endDate"></div>
+
+            <div class="col">
+
+                <div>
+                    <input type="text" readonly value="0">
+                    <br/>
+                    <label>Days</label>
+                </div>
+
+                <div>
+                    <input type="text" readonly value="0">
+                    <br/>
+                    <label>Hours</label>
+                </div>
+
+                <div>
+                    <input type="text" readonly value="0">
+                    <br/>
+                    <label>Minutes</label>
+                </div>
+
+                <div>
+                    <input type="text" readonly value="0">
+                    <br/>
+                    <label>Seconds</label>
+                </div>
+
+            </div>
         </div>
-     </div>
-     <button id="reset-btn">Reset Game</button>
-     </main>
-    <script src="script.js"></script>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
